@@ -1,0 +1,4 @@
+mv r2, r3
+lda r3, 0x1000
+lda r19, 0x2000
+jlr
