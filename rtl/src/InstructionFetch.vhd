@@ -34,7 +34,7 @@ BEGIN
         VARIABLE v_cpu_logic_data : STD_LOGIC_VECTOR(31 DOWNTO 0) := (OTHERS => '0');
         VARIABLE v_cpu_data : INTEGER := 0;
     BEGIN
-        FILE_OPEN(ROM, "../MicroCode/Sources/ROM.bin", read_mode);
+        FILE_OPEN(ROM, "../../rom/src/ROM.bin", read_mode);
 
         WHILE NOT ENDFILE(ROM) LOOP
             WHILE (cpu_clk_s = '1') LOOP
